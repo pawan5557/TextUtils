@@ -50,7 +50,7 @@ function App() {
     navbartxt={a}
   />
   
-     <Textform></Textform>
+     <Textform sitetxt={alltext} box={txtbox} inboxtxt={a} ></Textform>
 
 
   {/* <Routes> */}
