@@ -5,7 +5,7 @@ import Textform from './components/Textform';
 import About from './components/About';
 
 
-// import { BrowserRouter as Router , Route , Routes } from "react-router-dom";
+import { HashRouter as Router , Route , Routes } from "react-router-dom";
 
 
 
@@ -39,7 +39,7 @@ function App() {
   return (
     <>
  
-    {/* <Router> */}
+    <Router>
 
   <Navbar
     title="TextUtils"
@@ -50,19 +50,19 @@ function App() {
     navbartxt={a}
   />
   
-     <Textform sitetxt={alltext} box={txtbox} inboxtxt={a} ></Textform>
+     {/* <Textform sitetxt={alltext} box={txtbox} inboxtxt={a} ></Textform> */}
 
 
-  {/* <Routes> */}
+  <Routes>
 
-    {/* <Route path="/About us" element={<About/>} /> */}
+    <Route path="/About us" element={<About abtxt={a}/>} />
     
 
-    {/* <Route path="/" element={<Textform sitetxt={alltext} box={txtbox} inboxtxt={a} />}/> */}
+    <Route path="/" element={<Textform sitetxt={alltext} box={txtbox} inboxtxt={a} />}/>
     
     
-  {/* </Routes>
-    </Router> */}
+  </Routes>
+    </Router>
     </>
   );
 }

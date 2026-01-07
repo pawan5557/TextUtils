@@ -1,8 +1,8 @@
 import React from 'react'
 
-export default function About() {
+export default function About(props) {
   return (
-    <div class="lead mx-2">
+    <div className={`lead mx-2  text-${props.abtxt}` }>
       <p>
       Analyze Your text with Textutils!</p>
 <p>Textutils gives you a way to analyze your text quickly and efficiently. Be it word count, character count or
